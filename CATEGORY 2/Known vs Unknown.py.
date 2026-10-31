@@ -1,0 +1,18 @@
+def known_environment():
+    print("Known Environment")
+    temperature = 30
+    if temperature > 25:
+        print("Action: Turn ON Fan")
+    else:
+        print("Action: Turn OFF Fan")
+
+def unknown_environment():
+    print("\nUnknown Environment")
+    temperature = int(input("Enter temperature: "))
+    if temperature > 25:
+        print("Action: Turn ON Fan")
+    else:
+        print("Action: Turn OFF Fan")
+
+known_environment()
+unknown_environment()
