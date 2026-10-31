@@ -1,0 +1,19 @@
+def discrete_environment():
+    print("Discrete Environment")
+    position = 2
+    print("Position:", position)
+    if position < 5:
+        print("Action: Move Right")
+    else:
+        print("Action: Stop")
+
+def continuous_environment():
+    print("\nContinuous Environment")
+    position = float(input("Enter position: "))
+    if position < 5:
+        print("Action: Move Right")
+    else:
+        print("Action: Stop")
+
+discrete_environment()
+continuous_environment()
