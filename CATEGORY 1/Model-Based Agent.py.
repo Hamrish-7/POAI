@@ -1,0 +1,19 @@
+class ModelBasedAgent:
+    def __init__(self):
+        self.state = {}
+
+    def act(self, location, status):
+        self.state[location] = status
+
+        if status == "Dirty":
+            return "Clean"
+        else:
+            return "Move"
+
+agent = ModelBasedAgent()
+
+location = input("Enter location (A/B): ")
+status = input("Enter room status (Dirty/Clean): ")
+
+print("Action:", agent.act(location, status))
+print("Memory:", agent.state)
