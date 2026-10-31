@@ -1,0 +1,17 @@
+def static_environment():
+    print("Static Environment")
+    status = "Dirty"
+    print("Room Status:", status)
+    if status == "Dirty":
+        print("Action: Clean")
+
+def dynamic_environment():
+    print("\nDynamic Environment")
+    status = input("Enter room status (Dirty/Clean): ")
+    if status == "Dirty":
+        print("Action: Clean")
+    else:
+        print("Action: Move")
+
+static_environment()
+dynamic_environment()
