@@ -1,0 +1,12 @@
+def utility_based_agent(status):
+    if status == "Dirty":
+        return "Clean", 10
+    else:
+        return "Move", 5
+
+status = input("Enter room status (Dirty/Clean): ")
+
+action, utility = utility_based_agent(status)
+
+print("Action:", action)
+print("Utility:", utility)
