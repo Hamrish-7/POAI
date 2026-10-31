@@ -1,0 +1,17 @@
+import random
+
+def deterministic_environment():
+    print("Deterministic Environment")
+    action = "Move Right"
+    print("Action:", action)
+    print("Result: Position moves right")
+
+def stochastic_environment():
+    print("\nStochastic Environment")
+    action = "Move Right"
+    result = random.choice(["Move Right", "Stay", "Move Left"])
+    print("Action:", action)
+    print("Result:", result)
+
+deterministic_environment()
+stochastic_environment()
