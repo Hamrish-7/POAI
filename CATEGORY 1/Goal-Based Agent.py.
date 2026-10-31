@@ -1,0 +1,11 @@
+def goal_based_agent(status):
+    goal = "Clean"
+
+    if status == goal:
+        return "Goal Achieved"
+    else:
+        return "Clean"
+
+status = input("Enter room status (Dirty/Clean): ")
+
+print("Action:", goal_based_agent(status))
